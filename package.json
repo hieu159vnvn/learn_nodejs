@@ -6,6 +6,7 @@
   "scripts": {
     "start": "nodemon --inspect src/index.js",
     "watch": "node-sass -w src/resources/scss -o src/public/css",
+    "beautiful": "prettier --single-quote --trailing-comma all --write src/**/*.{js,json,scss}",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,7 +25,9 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.3.0",
-    "nodemon": "^2.0.7"
+    "mongoose": "^5.12.3",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
   },
   "devDependencies": {
     "morgan": "^1.10.0",
